@@ -1,0 +1,24 @@
+**/.vscode
+**/.idea
+**/.occ
+**/.eslintcache
+**/.stylelintcache
+**/build
+**/dist
+!**/__test__/**/dist
+**/node_modules
+**/test-results*
+**/*.log
+**/*.pid
+**/*.orig
+**/*.project
+**/*.settings
+**/testGen
+**/coverage
+**/accelerator-templates/templates 
+**/docs/**
+.yarncache
+*.DS_Store
+tests-temp-dir*
+blank_store (1).zip
+/log

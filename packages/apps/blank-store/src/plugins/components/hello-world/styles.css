@@ -1,0 +1,39 @@
+/* .nav{
+  color: white;
+} */
+
+/* .CollectionNavigationDesktop{
+  background-color: #2874f0;
+  color: white;
+
+} */
+
+.header{
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #2874f0;
+  color: aliceblue;
+}
+
+
+.header .navbar{
+  /* position: fixed; */
+  font-size: 1.7rem;
+  padding: 1rem;
+  margin-right: 10rem;
+  background: #2874f0;
+}
+
+.header .navbar a{
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+  color: red;
+  font-weight: bold;
+}

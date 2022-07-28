@@ -1,0 +1,12 @@
+export const youSearchedText = '[zh_CN]You searched[zh_CN]';
+export const andText = '和';
+export const resultsFoundText = '找到的结果';
+export const showingText = '显示';
+export const productsOfText = '产品';
+export const filterText = '筛选';
+export const clickText = '[zh_CN]Click[zh_CN]';
+export const hereText = '[zh_CN]here[zh_CN]';
+export const seeProductsText = '[zh_CN]to see our products.[zh_CN]';
+export const noSearchResultsText = '[zh_CN]Sorry... No results found[zh_CN]';
+export const txtSearch = '[zh_CN]Try adjusting your search or filter to find what you are looking for.[zh_CN]';
+export const labelSelect = '选择';

@@ -1,0 +1,41 @@
+{
+  "name": "@oracle-cx-commerce/blank-store",
+  "version": "3.3.1",
+  "private": true,
+  "description": "Oracle Cloud Commerce Storefront Template Application",
+  "dependencies": {
+    "@oracle-cx-commerce/actions": "3.3.1",
+    "@oracle-cx-commerce/endpoints": "3.3.1",
+    "@oracle-cx-commerce/react-app": "3.3.1",
+    "@oracle-cx-commerce/react-components": "3.3.1",
+    "@oracle-cx-commerce/react-widgets": "3.3.1",
+    "@oracle-cx-commerce/styles": "3.3.1",
+    "@oracle-cx-commerce/subscribers": "3.3.1",
+    "@oracle-cx-commerce/commerce-utils": "3.3.1"
+  },
+  "devDependencies": {
+    "@oracle-cx-commerce/rollup-config": "3.3.1"
+  },
+  "occ": {
+    "namespace": "occ.react",
+    "plugins": {
+      "actions": "src/plugins/actions",
+      "components": "src/plugins/components",
+      "endpoints": "src/plugins/endpoints",
+      "subscribers": "src/plugins/subscribers"
+    },
+    "locales": [
+      "en",
+      "de"
+    ],
+    "aliases": {
+      "@oracle-cx-commerce/styles/common.css": "@oracle-cx-commerce/blank-store/src/core/ui/styles/common.css",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-list/component": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-list/component.js",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-listing-container/component": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-listing-container/component.js",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-list/components/dynamic-product-list-item": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-list/components/dynamic-product-list-item",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-list/styles.css": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-list/style.css",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-listing-container/styles.css": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-listing-container/style.css",
+      "@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-list/components/dynamic-product-list-item/styles.css": "@oracle-cx-commerce/blank-store/src/patches/product-listing/dynamic-product-list/components/dynamic-product-list-item/style.css"
+    }
+  }
+}

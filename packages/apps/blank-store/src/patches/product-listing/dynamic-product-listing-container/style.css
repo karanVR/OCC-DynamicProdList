@@ -1,0 +1,21 @@
+.DynamicProductListingContainer {
+    padding: 0px;
+  }
+  
+  .DynamicProductListingContainer__Section--Desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--cc-root-header-color);
+    background-color: var(--cc-root-header-background-color);
+    /* padding-right: 0.875rem; */
+    padding-right: 0;
+  }
+  
+  .DynamicProductListingContainer__Section--Desktop .col-3,
+  .DynamicProductListingContainer__Section--Desktop .col-6,
+  .DynamicProductListingContainer__Section--Desktop .col-9 {
+    padding: 0.5rem;
+  }
+  
