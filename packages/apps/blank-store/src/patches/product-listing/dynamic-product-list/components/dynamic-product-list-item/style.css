@@ -1,5 +1,5 @@
 body {
-  background: #2874f0;
+  background: #ffffff;
   align-items: center;
 }
 
@@ -54,6 +54,7 @@ img{
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  padding: 50px;
 }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
@@ -85,11 +86,11 @@ img{
 
 .DynamicProductListItem__Product {
     vertical-align: super;    
-    padding: 9px 0px 0px 0;
-    border-radius: 10px;
-    border:5px #ffe500 solid;
+    padding: 0px 0px 0px 0;
+    /* border-radius: 10px; */
+    border:3px #c3c3c3 solid;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 1px 0 rgb(0 0 0 / 14%);
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: .5rem;
     color: rgba(0, 0, 0, 0.87);
     text-align: left;
@@ -234,8 +235,46 @@ img{
   }
 }
 
+.like_icon{
+  width: 40px;
+  height: 40px !important;
+  position: absolute;
+  left: 471px;
+  top: 10px;
+}
+
+.gender_icon{
+  width: 40px;
+  height: 40px !important;
+  position: absolute;
+  left: 465px;
+  top: 449px;
+}
+
+.box_icon{
+  width: 40px;
+  height: 40px !important;
+  position: absolute;
+  left: 465px;
+  top: 406px;
+}
+
+.tick_icon{
+  width: 40px;
+  height: 40px !important;
+  position: absolute;
+  left: 49px;
+  top: 435px;
+}
+
+.prodName{
+  font-size: 28px; 
+  font-weight: bold; 
+  color: #0f176c;
+}
+
 .DynamicProductListItem__Product img {
-  height: 256px !important;
+  height: 256px;
 }
 .DynamicProductListItem__Product .favourites {
   width: 24px !important;
@@ -246,4 +285,6 @@ img{
   top: 50%;
   transform: translateY(-50%);
 }
+
+
 

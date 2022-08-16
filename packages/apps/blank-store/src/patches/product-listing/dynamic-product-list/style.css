@@ -6,6 +6,7 @@
     display: grid;
     grid-gap: 1rem;
     width: 100%;
+    padding: 100px;
     /* padding-left: 172px;
     padding-right: 142px; */
   }
@@ -21,7 +22,7 @@
     row-gap: 1.5rem;
     /* margin-right: 10.75rem; */
     width: 100%;
-    padding: 0;
+    padding: 75px;
   }
 
   .DynamicProductList__Table .DynamicProductList__Showing-Products {
@@ -282,6 +283,7 @@
     /* width: 97.5%; */
     padding: 0;
     margin: 0;
+    padding: 50px;
   }
   .container-search .Container-filter {
     padding-right: 0;
@@ -304,6 +306,7 @@
     /* width: 96%; */
     padding: 0;
     margin: 0;
+    padding: 50px;
   }
   .container-search .Container-filter {
     padding-right: 0;

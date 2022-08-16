@@ -1,0 +1,282 @@
+.RefinementMenu__RefinementHeader {
+  margin: 1rem 0 .5rem 0;
+  padding: 0 .5rem;
+  width: 100%;
+  height: 28px;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.RefinementMenu__RefinementHeaderTitle {
+  height: 28px;
+  max-width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+  font-weight: 500;
+}
+
+.RefinementMenu__CaretIcon {
+  right: .5rem;
+  width: 30px;
+}
+
+div .RefinementMenu__ExpandIcon {
+  width: 15px;
+  height: 15px;
+  left: 14rem;
+  margin: 0.4rem 0 0 0;
+}
+
+.RefinementMenu__Refinements {
+  padding: 0 .5rem;
+}
+
+.RefinementMenu__SelectedRefinement {
+  border: 1px solid var(--cc-border-color);
+  border-radius: var(--cc-border-radius);
+  padding: .6rem 1rem 2rem 1rem;
+  margin: .3rem .9rem .3rem 0;
+  background-color: var(--cc-a-color);
+  color: var(--cc-button-color);
+  height: 35px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.RefinementMenu__Refinement {
+  border: 1px solid var(--cc-border-color);
+  border-radius: var(--cc-border-radius);
+  color: var(--cc-color);
+  padding: .6rem 1rem 2rem 1rem;
+  margin: .3rem .9rem .3rem 0;
+  height: 35px;
+  font-weight: 500;
+  text-decoration: none;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+
+.RefinementMenu__Refinement:hover,
+.RefinementMenu__Refinement:active {
+  color: var(--cc-root-header-color);
+  text-decoration: none;
+}
+
+
+.RefinementMenu__ShowMoreLink {
+  font-weight: 400;
+  color: var(--cc-a-color);
+  display: block;
+  padding: .7rem .2rem;
+}
+
+.refinementmenudrawer{
+  display: none;
+}
+
+.css-10hburv-MuiTypography-root {
+  height: 30px;
+  font-family: var(--cc-font-family-aktifoa-semibold);
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.MuiAccordionSummary-content .css-ahj2mt-MuiTypography-root {
+  height: 18px;
+  opacity: 0.87;
+  font-family:  var(--cc-font-family-aktifoa-semibold);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  color: #000;
+}
+
+.MuiFormControlLabel-root .css-ahj2mt-MuiTypography-root {
+  height: 24px;
+  margin: 8px 0;
+  font-family: var(--cc-font-family-aktifoa-book);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.MuiFormGroup-root label {
+  margin-bottom: 0;
+}
+
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  margin: 12px 0 0 0;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  min-height: 42px;
+}
+
+.css-h4y409-MuiList-root {
+  padding-bottom: 0;
+}
+.css-1rki8sg-MuiListItem-root {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.css-h4y409-MuiList-root {
+  height: 56px;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  padding: 5px 9px;
+}
+
+input[type="checkbox"], input[type="radio"]:checked:after{
+  background-color:red;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  background-color:#f8f8f8;
+}
+
+.closeIcon {
+  width:24px;
+  height: 24px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+}
+
+.flex-container > div {
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.clear-filter-btn {
+  width: calc(100% - 8px);
+  height: 48px;
+  font-family:  var(--cc-font-family-aktifoa-semibold);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #808285;
+  text-transform: capitalize;
+}
+
+.clear-filter-btn:hover {
+  background-color: transparent !important;
+  text-decoration: underline;
+  color: #e31f26;
+}
+
+.apply-filter-btn {
+  width: calc(100% - 8px);
+  height: 48px;
+  font-family:  var(--cc-font-family-aktifoa-semibold);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: #e31f26;
+  border-radius: 8px;
+}
+
+.MuiIconButton-edgeEnd:hover {
+  background-color: transparent;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  filter: invert(24%) sepia(100%) saturate(5816%) hue-rotate(350deg) brightness(92%) contrast(94%);
+}
+
+.MuiListItemSecondaryAction-root .MuiButtonBase-root:hover {
+  background-color: transparent;
+}
+
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+  padding: 0;
+  margin-right: 0;
+}
+
+.icf-down-ico {
+  width: 16px;
+  height: 16px;
+}
+
+.apply-filter-btn:hover {
+  background-color: #e31f26 !important;
+  border-radius: 8px;
+  border: solid 2px #e31f26;
+  color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.container-showMore {
+  text-align: center;
+  padding-bottom: 11px;
+  background-color: #f8f8f8;
+}
+
+.showMoreLink {
+  font-family:  var(--cc-font-family-aktifoa-semibold);
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+  color: #a6a8ab !important;
+  text-decoration: underline !important;
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  opacity: 0 !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  box-shadow: 0px 2px 1px -1px #ffff;
+  border-bottom: 1px solid rgb(166, 168, 171, .3);
+  border-top: none;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #e31f26;
+}
+

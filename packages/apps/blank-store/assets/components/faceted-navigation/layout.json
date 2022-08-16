@@ -1,0 +1,11 @@
+{
+    "regions": [
+        {
+            "components": [
+              "DynamicProductList"
+            ],
+            "width": 12,
+            "type": "main"
+          }
+    ]
+  }

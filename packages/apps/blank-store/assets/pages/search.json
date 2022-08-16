@@ -2,7 +2,7 @@
   "layout": [
     {
       "components": [
-        "_HelloWorld"
+        "SearchTermsSummary"
       ],
       "width": 12,
       "type": "main"

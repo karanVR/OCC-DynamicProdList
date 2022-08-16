@@ -1,13 +1,14 @@
 /*
  ** Copyright (c) 2020 Oracle and/or its affiliates.
  */
-import { ProductContext } from '@oracle-cx-commerce/react-ui/contexts';
-import React, { useState } from 'react';
+import {ProductContext} from '@oracle-cx-commerce/react-ui/contexts';
+import React, {useState} from 'react';
 import Region from '@oracle-cx-commerce/react-components/region';
 import Styled from '@oracle-cx-commerce/react-components/styled';
 import css from '@oracle-cx-commerce/react-widgets/product-listing/dynamic-product-list/components/dynamic-product-list-item/styles.css';
-import { useNavigator } from '@oracle-cx-commerce/react-components/link';
+import {useNavigator} from '@oracle-cx-commerce/react-components/link';
 // import {Image} from 'react-bootstrap';
+import Img from '@oracle-cx-commerce/react-components/img';
 
 /**
  * A component for a product result item.
@@ -16,7 +17,7 @@ import { useNavigator } from '@oracle-cx-commerce/react-components/link';
  * @param {array} props.regions The regions to display in the product result, defined in page layout.
  */
 const DynamicProductListItem = props => {
-  const { record = { attributes: {} }, regions, labelSelect } = props;
+  const {record = {attributes: {}}, regions, labelSelect} = props;
   // Used to keep track of color swatch selections. Object with properties:
   // - colorParameters: a url segment with query parameters for pre-selecting the correct color variant
   // - imageUrl: url for the product image in the selected color variant
@@ -46,8 +47,11 @@ const DynamicProductListItem = props => {
   return (
     // Pass down product context to any children.
     <Styled id="DynamicProductListItem" css={css}>
-      <ProductContext.Provider value={{ record, route, selection, setSelection }}>
+      <ProductContext.Provider value={{record, route, selection, setSelection}}>
         <div className="DynamicProductListItem__Product Container__Section">
+          <div>
+          <img className="like_icon" src="/file/general/like.png"></img>
+          </div>
           {regions.map((regionId, index) => (
             /*
                 Using region ids as keys causes unnecessary DOM reconciliation.
@@ -59,10 +63,16 @@ const DynamicProductListItem = props => {
           {record.attributes['product.route'] && record.attributes['product.route'][0] && (
             <div className="hvr-bob">
               <img src={record.attributes['product.primaryFullImageURL'][0]} alt="" />
-              <h1>{record.attributes['product.displayName'][0]}</h1>
+              <div className='prodName'>
+                <h1>{record.attributes['product.displayName'][0]}</h1>
+              </div>
+              <p>{record.attributes['sku.maxActivePrice'][0]}$</p>
+              <img className="box_icon" src="/file/general/icons8-rectangular-48.png"></img>
+              <img className="gender_icon" src="/file/general/gender.PNG"></img>
+              <img className="tick_icon" src="/file/general/icons8-done-24.png"></img>
+              <p style={{marginLeft: '45px'}}>progressive</p>
             </div>
           )}
-
         </div>
       </ProductContext.Provider>
     </Styled>
